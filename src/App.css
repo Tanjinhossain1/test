@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+.gradient_color {
+  background-color: #00DBDE;
+  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);  
+}
+.gradient_color_body {
+  background-color: #FF3CAC;
+background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+
+}
+.gradient-border {
+  border: 1px solid;
+  border-image: linear-gradient(45deg, #fc0394, #9403fc) 1; 
+}
+
