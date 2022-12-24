@@ -1,0 +1,385 @@
+[
+    {
+        "selector": "Manufacturing",
+        "space": "",
+        "value": "720"
+    },
+    {
+        "selector": "Consturtion Materials",
+        "space": "",
+        "value": "1"
+    },
+    {
+        "selector": "Electronics and Optics",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "2"
+    },
+    {
+        "selector": "Food and Beverage",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "3"
+    },
+    {
+        "selector": "Bakery & confectionery products",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "4"
+    },
+    {
+        "selector": "Beverages",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "5"
+    },
+    {
+        "selector": "Fish & fish Products",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "6"
+    },
+    {
+        "selector": "Meat & meat Products",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "7"
+    },
+    {
+        "selector": "Milk & dairy products",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "8"
+    },
+    {
+        "selector": "Other",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "9"
+    },
+    {
+        "selector": "Sweets & snack food",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "10"
+    },
+    {
+        "selector": "Furniture",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "34541"
+    },
+    {
+        "selector": "Bathroom/sauna",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "11"
+    },
+    {
+        "selector": "Bedroom Childrena's room",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "12"
+    },
+    {
+        "selector": "Kitchen",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "14"
+    },
+    {
+        "selector": "Living room",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "17"
+    },
+    {
+        "selector": "Office",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "19"
+    },
+    {
+        "selector": "Other (Furniture)",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "66"
+    },
+    {
+        "selector": "Outdoor",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "55"
+    },
+    {
+        "selector": "Project furniture",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "45"
+    },
+    {
+        "selector": "Machinery",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "3641"
+    },
+    {
+        "selector": "Machinery components",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "43"
+    },
+    {
+        "selector": "Machinery equipment/tools",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "90"
+    },
+    {
+        "selector": "Manufacture of machinery",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "32"
+    },
+    {
+        "selector": "Maritime",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "31"
+    },
+    {
+        "selector": "Aluminium and steel workboats",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "19"
+    },
+    {
+        "selector": "Boat/yacht building",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "91"
+    },
+    {
+        "selector": "Ship repair and conversion",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "56"
+    },
+    {
+        "selector": "Metal Structures",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "77"
+    },
+    {
+        "selector": "Other",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "66"
+    },
+    {
+        "selector": "Repair and maintenance service",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "55"
+    },
+    {
+        "selector": "metalworking",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "34721"
+    },
+    {
+        "selector": "Construction of metal structures",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "11"
+    },
+    {
+        "selector": "Houses and buildings",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "23"
+    },
+    {
+        "selector": "Metal products",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "33"
+    },
+    {
+        "selector": "Metal works",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "231"
+    },
+    {
+        "selector": "CNC-machining",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+    },
+    {
+        "selector": "Forgings, Fasteners",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+    },
+    {
+        "selector": "Gas, Plasma, Laser cutting",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+    },
+    {
+        "selector": "MIG, TIG, Alumunium welding",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+    },
+    {
+        "selector": "Plastic and Rubber",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "3241"
+    },
+    {
+        "selector": "Packaging",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "78"
+    },
+    {
+        "selector": "Plastic goods",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "87"
+    },
+    {
+        "selector": "Plastic processing technology",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "98"
+    },
+    {
+        "selector": "Blowing",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+    },
+    {
+        "selector": "Moulding",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+    },
+    {
+        "selector": "Plastics welding and processing",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+    },
+    {
+        "selector": "Plastic profiles",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "51"
+    },
+    {
+        "selector": "Printing",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "098"
+    },
+    {
+        "selector": "Advertising",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "851"
+    },
+    {
+        "selector": "Book/Periodicals printing",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "511"
+    },
+    {
+        "selector": "Labelling and packaging printing",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "5231"
+    },
+    {
+        "selector": "textile and Clothing",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "66"
+    },
+    {
+        "selector": "Clothing",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "515"
+    },
+    {
+        "selector": "Textile",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "519"
+    },
+    {
+        "selector": "Wood",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "3410"
+    },
+    {
+        "selector": "Other (Wood)",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "510"
+    },
+    {
+        "selector": "Wooden building materials",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "951"
+    },
+    {
+        "selector": "Wooden houses",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "501"
+    },
+    {
+        "selector": "Other",
+        "space": "",
+        "value": "7290"
+    },
+    {
+        "selector": "Creative indurtries",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "3481"
+    },
+    {
+        "selector": "Enerty technology",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "3418"
+    },
+    {
+        "selector": "Environment",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "3741"
+    },
+    {
+        "selector": "Service",
+        "space": "",
+        "value": "720"
+    },
+    {
+        "selector": "Buisness service",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "346"
+    },
+    {
+        "selector": "Engineering",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "3461"
+    },
+    {
+        "selector": "Information Technology and telecomunications ",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "3541"
+    },
+    {
+        "selector": "Data processing web portals, E-marketing ",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "518"
+    },
+    {
+        "selector": "Programming, Consultancy",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "514"
+    },
+    {
+        "selector": "Software, Hardware",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "513"
+    },
+    {
+        "selector": "Telecommunications",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "521"
+    },
+    {
+        "selector": "Tourism",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "6341"
+    },
+    {
+        "selector": "Translation services",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "3417"
+    },
+    {
+        "selector": "Transport and Logistics",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "34198"
+    },
+    {
+        "selector": "Air",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "5241"
+    },
+    {
+        "selector": "Rail",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "561"
+    },
+    {
+        "selector": "Road",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "851"
+    },
+    {
+        "selector": "Water",
+        "space": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "value": "151"
+    }
+]
