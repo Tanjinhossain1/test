@@ -10,8 +10,7 @@ function App() {
     <div className="gradient_color_body">
       <Navbar />
       <Routes>
-        <Route path="/" element={<CreateUserDataForm />}></Route>
-        <Route path="/home" element={<CreateUserDataForm />}></Route>
+        <Route path="/" element={<CreateUserDataForm />}></Route> 
       </Routes>
       <ToastContainer />
     </div>

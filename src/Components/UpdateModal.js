@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ThreeCircles } from "react-loader-spinner";
+import { Circles, ThreeCircles } from "react-loader-spinner";
 import { useQuery } from "react-query";
 import { toast } from "react-toastify";
 
@@ -9,6 +9,7 @@ function UpdateModal({ setOpenUpdateModal, openUpdateModal, refresh }) {
   const [checkboxError, setCkboxError] = useState("");
   const [checkboxStatus, setCheckboxStatus] = useState(false);
 
+  const [updateDataLoaad, setUpdateDataLoaad] = useState(false);
   //  fetch the selectors data from json
   const { isLoading, error, data, refetch } = useQuery("selectors", () =>
     fetch("https://test-task-pftw.onrender.com/selectors").then((res) =>
@@ -43,6 +44,7 @@ function UpdateModal({ setOpenUpdateModal, openUpdateModal, refresh }) {
           if (checkboxStatus) {
             setCkboxError("");
             // here the updated fetch
+            setUpdateDataLoaad(true)
             fetch(
               `https://test-task-pftw.onrender.com/updateUserData/${openUpdateModal}`,
               {
@@ -55,7 +57,8 @@ function UpdateModal({ setOpenUpdateModal, openUpdateModal, refresh }) {
             )
               .then((res) => res.json())
               .then((data) => {
-                refresh();
+                  refresh();
+                  setUpdateDataLoaad(false)
                 toast.success("Update You Data SuccessFully");
                 setOpenUpdateModal(false);
               });
@@ -129,12 +132,24 @@ function UpdateModal({ setOpenUpdateModal, openUpdateModal, refresh }) {
             <div className="modal-action">
               <label htmlFor="my-modal-6" className="btn btn-error text-white">
                 Cancel
-              </label>
+              </label> 
+                        
               <button
-                type="submit"
-                className="btn btn-success font-bold text-white "
+              type="submit"
+              className="btn btn-success font-bold text-white "
               >
-                SAVE
+                {
+                updateDataLoaad ?  <Circles
+                height="30"
+                width="30"
+                color="#ed2b15"
+                ariaLabel="circles-loading"
+                wrapperStyle={{}}
+                wrapperClass=""
+                visible={true}
+                /> :
+                "SAVE"
+            }
               </button>
             </div>
           </form>

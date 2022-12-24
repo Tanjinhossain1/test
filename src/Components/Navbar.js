@@ -99,7 +99,7 @@ const Navbar = () => {
               <li>{navItems}</li>
             </ul>
           </div>
-          <Link to="/home" className="btn btn-ghost normal-case text-xl">
+          <Link to="/" className="btn btn-ghost normal-case text-xl">
             Test-Task
           </Link>
         </div>

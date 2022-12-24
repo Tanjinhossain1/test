@@ -3,22 +3,25 @@ import { useQuery } from "react-query";
 import UpdateModal from "./UpdateModal";
 import DeleteModal from "./DeleteModal";
 import { toast } from "react-toastify"; 
-import { ThreeCircles } from "react-loader-spinner";
+import { Circles, ThreeCircles } from "react-loader-spinner";
 
 function FormDataShow({userData, refetch, isLoading2}) {
   const [openUpdateModal, setOpenUpdateModal] = useState(0);
   const [deleteStatus, setDeleteStatus] = useState(0);
+  const [deleteDataLoder, setDeleteDataLoder] = useState(false);
   
 
   const deleteData = (id) => { 
+    setDeleteDataLoder(true)
     fetch(`https://test-task-pftw.onrender.com/deleteUserData/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
       .then((data) => {
-        setDeleteStatus(false) 
-        toast.warning('You Data Has Been Deleted')
-        refetch();
+          toast.warning('You Data Has Been Deleted')
+          refetch();
+          setDeleteDataLoder(false)
+          setDeleteStatus(false) 
       });
   };
    
@@ -81,7 +84,16 @@ function FormDataShow({userData, refetch, isLoading2}) {
           </tbody>
         </table>
       </div>
-      {deleteStatus ? <DeleteModal><button onClick={() => deleteData(deleteStatus)} className="btn btn-outline bg-red-500 border-0">Confirm Delete</button></DeleteModal> : null }
+      {deleteStatus ? <DeleteModal><button onClick={() => deleteData(deleteStatus)} className="btn btn-outline bg-red-500 border-0"> {deleteDataLoder ? 
+                        <Circles
+                          height="20"
+                          width="20"
+                          color="#fafafa"
+                          ariaLabel="circles-loading"
+                          wrapperStyle={{}}
+                          wrapperClass=""
+                          visible={true}
+                        />  : "Confirm Delete"} </button></DeleteModal> : null }
       {openUpdateModal ? <UpdateModal openUpdateModal={openUpdateModal} setOpenUpdateModal={setOpenUpdateModal} refresh={refetch}></UpdateModal> : null }
     </div>
   );

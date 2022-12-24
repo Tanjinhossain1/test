@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import FormDataShow from "./FormDataShow";
 import { useQuery } from "react-query";
 import { toast } from "react-toastify";
-import { FidgetSpinner } from "react-loader-spinner";
+import { Circles, FidgetSpinner } from "react-loader-spinner";
 
 const CreateUserDataForm = () => {
   const [nameError, setNameError] = useState("");
   const [selectorError, setSelectorError] = useState("");
   const [checkboxError, setCkboxError] = useState("");
   const [checkboxStatus, setCheckboxStatus] = useState(false);
+  const [createDataLoaad, setCreateDataLoaad] = useState(false);
 
   //  fetch the selectors data from json
   const { isLoading, error, data } = useQuery("selectors", () =>
@@ -22,23 +23,37 @@ const CreateUserDataForm = () => {
     data: userData,
     refetch,
   } = useQuery("getUserData", () =>
-    fetch("https://test-task-pftw.onrender.com/getUserData").then((res) => res.json())
-  ); 
+    fetch("https://test-task-pftw.onrender.com/getUserData").then((res) =>
+      res.json()
+    )
+  );
 
   if (isLoading) {
-    return <div style={{display: 'flex', justifyContent: 'center', height:'800px', marginTop: 20}}><FidgetSpinner
-    visible={true}
-    height="80"
-    width="80"
-    ariaLabel="dna-loading"
-    wrapperStyle={{}}
-    wrapperClass="dna-wrapper"
-    ballColors={['#ff0000', '#00ff00', '#0000ff']}
-    backgroundColor="#F4442E"
-  /></div>;
+    return (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          height: "800px",
+          marginTop: 20,
+        }}
+      >
+        <FidgetSpinner
+          visible={true}
+          height="80"
+          width="80"
+          ariaLabel="dna-loading"
+          wrapperStyle={{}}
+          wrapperClass="dna-wrapper"
+          ballColors={["#ff0000", "#00ff00", "#0000ff"]}
+          backgroundColor="#F4442E"
+        />
+      </div>
+    );
   }
   const submitTheForm = (e) => {
     e.preventDefault();
+
     const name = e.target.name.value;
     const selectors = e.target.selector.value;
     // this for validate or send the data on backend
@@ -50,6 +65,7 @@ const CreateUserDataForm = () => {
           if (checkboxStatus) {
             setCkboxError("");
             // here the fetch
+            setCreateDataLoaad(true);
             fetch(`https://test-task-pftw.onrender.com/createUserData`, {
               method: "POST",
               headers: {
@@ -60,7 +76,8 @@ const CreateUserDataForm = () => {
               .then((res) => res.json())
               .then((result) => {
                 if (result.acknowledged) {
-                  refetch()
+                  setCreateDataLoaad(false);
+                  refetch();
                   toast.success("Purchase Product add SuccessFully!");
                 }
                 e.target.reset();
@@ -83,7 +100,7 @@ const CreateUserDataForm = () => {
 
   return (
     <div>
-      <div class="gradient_color_body  pt-20 pb-19 h-[800px] ">
+      <div class="gradient_color_body  pt-20 pb-19 h-[900px] ">
         <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
 
         <div class="p-4  bg-base-100 text-base-content bg-transparent lg:flex justify-around ">
@@ -98,8 +115,11 @@ const CreateUserDataForm = () => {
 
                   <form onSubmit={submitTheForm} className="mt-8 ">
                     <div className="flex flex-col mb-4">
-                      <label className="text-gray-700 mb-1 font-semibold" htmlFor="name">
-                        Name: 
+                      <label
+                        className="text-gray-700 mb-1 font-semibold"
+                        htmlFor="name"
+                      >
+                        Name:
                       </label>
                       <input
                         className="rounded-full p-2 shadow-inner  bg-gradient-to-t from-[#f9feff] to-[#e9eef1]"
@@ -108,9 +128,9 @@ const CreateUserDataForm = () => {
                         placeholder="Enter Name"
                       />
                       <p style={{ color: "red" }}>{nameError}</p>
-                    </div> 
+                    </div>
 
-          <label className="font-semibold" >Selectors: </label>
+                    <label className="font-semibold">Selectors: </label>
                     {/* show the select  */}
                     <select
                       name="selector"
@@ -144,19 +164,36 @@ const CreateUserDataForm = () => {
                       </label>
                       <p style={{ color: "red" }}>{checkboxError}</p>
                     </div>
-
-                    <input
-                      className="w-full border  rounded-full  text-white  py-3 font-bold bg-gradient-to-br from-[#4f2deb] via-[#ae3ead] to-[#0dc4d1] "
-                      type="submit"
-                      value="SAVE"
-                    />
+                    {createDataLoaad ? (
+                      <button className="w-full border flex justify-center rounded-full  text-white  py-3 font-bold bg-gradient-to-br from-[#4f2deb] via-[#ae3ead] to-[#0dc4d1] ">
+                        <Circles
+                          height="40"
+                          width="40"
+                          color="#56fc03"
+                          ariaLabel="circles-loading"
+                          wrapperStyle={{}}
+                          wrapperClass=""
+                          visible={true}
+                        />
+                      </button>
+                    ) : (
+                      <input
+                        className="w-full border  rounded-full  text-white  py-3 font-bold bg-gradient-to-br from-[#4f2deb] via-[#ae3ead] to-[#0dc4d1] "
+                        type="submit"
+                        value="SAVE"
+                      />
+                    )}
                   </form>
                 </div>
               </div>
             </div>
           </div>
-          <div style={{height: "600px" }} >
-            <FormDataShow  userData={userData} isLoading2={isLoading2} refetch={refetch} />
+          <div style={{ height: "600px" }}>
+            <FormDataShow
+              userData={userData}
+              isLoading2={isLoading2}
+              refetch={refetch}
+            />
           </div>
         </div>
       </div>
